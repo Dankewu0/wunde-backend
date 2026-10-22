@@ -1,0 +1,12 @@
+package main
+
+import "gorm.io/gorm"
+
+type OrderItem struct {
+	gorm.Model
+	OrderID   uint
+	ProductID uint
+	Product   Product
+	Quantity  int
+	Price     int
+}
